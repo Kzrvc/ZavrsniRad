@@ -57,7 +57,7 @@ python -m http.server 8000
 
 Zatim otvorite http://localhost:8000, registrirajte se i ocijenite nekoliko filmova – preporuke se pojave nakon prvih ocjena.
 
-> Napomena: `scikit-surprise` na novijim verzijama Pythona može zahtijevati C++ build alate. Bez njega rade kolaborativne i content-based preporuke, a ML preporuke vraćaju prazan popis.
+
 
 ## Ograničenja
 
