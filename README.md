@@ -29,13 +29,6 @@ Usporedba modela za istog korisnika (koliko preporučenih filmova pripada žanro
 
 ![Žanrovska statistika preporuka](docs/images/zanr_statistika.jpg)
 
-## Arhitektura
-
-```
-frontend (HTML/CSS/JS)  ──fetch──►  backend (Flask REST API)  ──►  SQLite (filmovi.db)
-                                              ▲
-                                  TMDb API (dohvat filmova, postera, žanrova)
-```
 
 - `backend/` – Flask API, SQLite baza (tablice `users`, `movies`, `ratings`, `preferences`), skripta za dohvat filmova s TMDb-a
 - `frontend/` – statične stranice (`index.html`, `movies.html`, `about.html`) i `app.js` koji komunicira s API-jem na `http://127.0.0.1:5000`
